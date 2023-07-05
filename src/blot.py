@@ -26,7 +26,7 @@ def draw_blot_with_lanes(lanes):
         ax.vlines(i * LANE_WIDTH, 0, LANE_HEIGHT, colors='white')
 
     # Draw the ladder in the first lane
-    draw_ladder(ax)
+    draw_ladder(ax)  # We only pass 'ax' as argument
 
     # Set the limits of the plot
     plt.xlim([-5, blot_width + 5])
